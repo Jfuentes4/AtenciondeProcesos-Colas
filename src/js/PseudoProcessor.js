@@ -21,11 +21,11 @@ class PseudoProcessor {
 
                 } else {
                     attendedProcess++;
-                    currentProcess = this._stack.pop();
+                    currentProcess = this._stack.shift();
                 }
             } else {
                 emptyTimes++;
-                currentProcess = this._stack.pop();
+                currentProcess = this._stack.shift();
             }
 
             if (this._stack.length > maxStackLength) {
